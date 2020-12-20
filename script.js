@@ -28,6 +28,9 @@ function pageLoad () {
 
 	//4. rá kell szánni magam a true és a false használatára
 
+
+	
+	//HTML teendők
 	let htmlNotes = [];
 
 	htmlNotes.push({
@@ -48,6 +51,61 @@ function pageLoad () {
 		tag: "div",
 		content: `
 			2. Head-ben történő hivatkozások sorrendje fontos
+		`,
+	});
+
+	//CSS teendők
+	let cssNotes = [];
+
+	cssNotes.push({
+		tag: "div",
+		content: `
+			1. Több türelem a Nav Bar elkészítéséhez (Bootstrap-ben mennyivel gyorsabb lenne :D)
+		`,
+	});
+
+	cssNotes.push({
+		tag: "div",
+		content: `
+			2. Nem használom ki 100%-ban az SCSS lehetőségeit (kevés a <code>$variables</code>, <code>@mixin</code>-<code>@include</code>), csak a nestinget
+		`,
+	});
+
+	cssNotes.push({
+		tag: "div",
+		content: `
+			3. Ha nem találom el a jó selectort, majd az Inspect megmondja nekem
+		`,
+	});
+
+	//JS teendők
+	let jsNotes = [];
+
+	jsNotes.push({
+		tag: "div",
+		content: `
+			1. Figyelni arra, hogy minek lehet adni <code>.style</code> vagy <code>.classList</code> -et, és minek nem és miért
+		`,
+	});
+
+	jsNotes.push({
+		tag: "div",
+		content: `
+			2. Ha valami nem úgy működik, mint ahogy szeretném, vegyem elő a Source panelt és debug-oljak
+		`,
+	});
+
+	jsNotes.push({
+		tag: "div",
+		content: `
+			3. Lejegyzetelni és értelmezni minden valaha használt beépített JS függvényt, amiről eddig nem tudtam
+		`,
+	});
+
+	jsNotes.push({
+		tag: "div",
+		content: `
+			4. Rá kell szánni magam a <code>true</code> és a <code>false</code> használatára
 		`,
 	});
 
@@ -174,7 +232,7 @@ function pageLoad () {
 
 		let cssRules = document.getElementById("cssRules");
 
-		for (note of htmlNotes){
+		for (note of cssNotes){
 			cssRules.insertAdjacentHTML("beforeend", `
 				<${note.tag}>${note.content}</${note.tag}>
 			`);
@@ -231,7 +289,7 @@ function pageLoad () {
 	
 		let jsRules = document.getElementById("jsRules");
 	
-		for (note of htmlNotes){
+		for (note of jsNotes){
 			jsRules.insertAdjacentHTML("beforeend", `
 				<${note.tag}>${note.content}</${note.tag}>
 			`);

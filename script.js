@@ -43,7 +43,7 @@ function pageLoad () {
 	htmlNotes.push({
 		tag: "code",
 		content: `
-		<div><a href="#">< div > < a_link 1 > </a><a href="#"> < a_link 2 > < /div ></a></div>
+		< div > < a_link 1 > < a_link 2 > < /div >
 		`,
 	});
 

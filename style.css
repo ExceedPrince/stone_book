@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@700&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  opacity: 0%;
+}
+
+#root.bigFadeIn {
+  opacity: 0%;
+  -webkit-animation: fadein 1s forwards;
+          animation: fadein 1s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+#root.bigFadeOut {
+  opacity: 100%;
+  -webkit-animation: fadeout 1.5s forwards;
+          animation: fadeout 1.5s forwards;
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+h1 {
+  padding-top: 30px;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+#colums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#colums img {
+  height: 320px;
+  padding: 50px;
+  opacity: 0%;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+  -webkit-animation: fadeinimg 1s forwards;
+          animation: fadeinimg 1s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#colums img:hover {
+  height: 350px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes fadeinimg {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeinimg {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.logo {
+  height: 250px;
+}
+
+.logo img {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0;
+  -webkit-animation: zoomup 1s forwards;
+          animation: zoomup 1s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes zoomup {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 200px;
+  }
+}
+
+@keyframes zoomup {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 200px;
+  }
+}
+
+.rules {
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 20px;
+  line-height: 200%;
+  -webkit-animation: showup 1s forwards;
+          animation: showup 1s forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes showup {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 130px;
+  }
+}
+
+@keyframes showup {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 130px;
+  }
+}
+
+#btns {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  -webkit-animation: fadein 1s forwards;
+          animation: fadein 1s forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 7px;
+  border-radius: 3px;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 600;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  margin: 0 10px;
+}
+
+#backBtn {
+  background-color: #4e4e4e;
+  color: white;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+#backBtn:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+#htmlBtn {
+  background-color: #fd5000;
+  color: white;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+#htmlBtn:hover {
+  background-color: #da2c00;
+  cursor: pointer;
+}
+
+#cssBtn {
+  background-color: #1ca3f1;
+  color: white;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+#cssBtn:hover {
+  background-color: #035fd6;
+  cursor: pointer;
+}
+
+#jsBtn {
+  background-color: #f0ed33;
+  color: black;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+#jsBtn:hover {
+  background-color: #f5bc00;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
